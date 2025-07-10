@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="forms-container">
+        <!-- Login Form -->
+        <div class="form-container login-container active" id="loginForm">
+            <div class="logo">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.9sHtA0dkV_AOm2uuDJ42UQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Intern Intelligence">
+            </div>
+            
+            <h1>Intern Intelligence</h1>
+            
+            <form id="loginFormElement">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="email" placeholder="Enter your email" required>
+                    <div class="error-message" id="loginEmail-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+                        <span class="toggle-password" id="toggleLoginPassword">👁️</span>
+                    </div>
+                    <div class="error-message" id="loginPassword-error"></div>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                
+                <button type="submit" class="btn">Log In</button>
+                
+                <div class="links">
+                    <a href="#" class="show-forgot-password">Forgot password?</a>
+                    <a href="#" class="show-signup">Don't have an account? Sign up</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="form-container signup-container" id="signupForm">
+            <div class="logo">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.9sHtA0dkV_AOm2uuDJ42UQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Intern Intelligence">
+            </div>
+            
+            <h1>Create Account</h1>
+            
+            <form id="signupFormElement">
+                <div class="form-group">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" name="name" placeholder="Enter your full name" required>
+                    <div class="error-message" id="signupName-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="email" placeholder="Enter your email" required>
+                    <div class="error-message" id="signupEmail-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <div class="password-container">
+                        <input type="password" id="signupPassword" name="password" placeholder="Create a password" required>
+                        <span class="toggle-password" id="toggleSignupPassword">👁️</span>
+                    </div>
+                    <div class="error-message" id="signupPassword-error"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <div class="password-container">
+                        <input type="password" id="signupConfirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                        <span class="toggle-password" id="toggleSignupConfirmPassword">👁️</span>
+                    </div>
+                    <div class="error-message" id="signupConfirmPassword-error"></div>
+                </div>
+                
+                <button type="submit" class="btn">Sign Up</button>
+                
+                <div class="links">
+                    <a href="#" class="show-login">Already have an account? Log in</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Forgot Password Form -->
+        <div class="form-container forgot-password-container" id="forgotPasswordForm">
+            <div class="logo">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.9sHtA0dkV_AOm2uuDJ42UQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Intern Intelligence">
+            </div>
+            
+            <h1>Reset Password</h1>
+            <p class="subtext">Enter your email to receive a password reset link</p>
+            
+            <form id="forgotPasswordFormElement">
+                <div class="form-group">
+                    <label for="forgotPasswordEmail">Email</label>
+                    <input type="email" id="forgotPasswordEmail" name="email" placeholder="Enter your email" required>
+                    <div class="error-message" id="forgotPasswordEmail-error"></div>
+                </div>
+                
+                <button type="submit" class="btn">Send Reset Link</button>
+                
+                <div class="links">
+                    <a href="#" class="show-login">Back to login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+<!-- Firebase SDKs -->
+<!-- ✅ Firebase SDKs (non-module version, works without imports) -->
+ <!--script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script-->
+
+
+
+
+  
